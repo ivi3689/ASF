@@ -1,0 +1,15 @@
+form {
+  margin: 0 auto;
+  width: 450px;
+  padding: 1em;
+  border: 2px solid orangered;
+  border-radius: 2rem;
+}
+
+.error-feedback{
+  color: 'red' !important;
+}
+
+
+
+

@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.form-group{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.form-group:after{
+	content:"";
+	clear: both;
+	height: 0px;
+  display: block;
+  text-align: center !important;
+}
+
+
+form-group{
+  padding:  0;
+}
+
+h2{
+	font-weight: bold;
+  text-align:center;
+  padding: 15px 0px;
+}
+
+

@@ -1,0 +1,23 @@
+registro{
+margin-top: 200px;
+}
+form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 2px solid orangered;
+  border-radius: 2rem;
+}
+
+input {
+  width:  auto;
+  height:20px;
+  padding: 1em;
+  margin: 10px 64px;
+  border-radius: 1rem;
+  text-align: center;
+}
+.entrar{
+  text-align: center;
+}
+

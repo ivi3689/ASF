@@ -1,0 +1,17 @@
+section h2, h3, h5{
+	font-weight: bold;
+	text-align:center;
+}
+p{
+  text-align:center;
+}
+.metodo{
+	padding: 30px 0px;
+}
+img{
+  margin:2% !important;
+}
+
+ .imagen{
+  margin:2% 10% !important;
+}
