@@ -1,28 +1,45 @@
-<p>
-  tabla works!
-</p>
 
 <div id="wrapper">
-		<header>
-			<h2>Seleccionar forma de ahorro</h2>
-			<select id="enfermedad">
-				<option value="">Selecciona un metodo o reto </option>
-			</select>
-			<select id="edades">
-				<option value="">Selecciona una cantidad</option>
-			</select>
-			<input id="inputSearch" type="text" placeholder="introduce una busqueda">
-			<button id="consulta">Consulta</button>
+  <header>
+    <h2>Seleccionar forma de ahorro</h2>
+    <select id="enfermedad">
+      <option value="">Selecciona un metodo o reto </option>
+    </select>
+    <select id="edades">
+      <option value="">Selecciona una cantidad</option>
+    </select>
+    <input type="button" value="Consultar una tabla" (click)="consultarTabla()">
+    <input type="button" value="Generar una tabla" (click)="nuevaTabla()">
+  </header>
 
-		</header>
-
-		<main id="main">
-
+  <main id="main">
 
 
-		</main>
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Día</th>
+          <th scope="col">Ahorro</th>
+          <th scope="col">Cantidad acumulada</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let t of tabla; let index=index; let last = last;">
+          <th scope="row">1</th>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><button (click)="aumentarTabla()" *ngIf="last">+</button></td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Tiempo total</th>
+          <td></td>
+          <td>Resultado acumulado</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
 
-		<footer>
-			Tabla proporcionada por ASF
-		</footer>
-	</div>
+  <footer>
+    Tabla proporcionada por ASF
+  </footer>
+</div>

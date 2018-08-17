@@ -41,8 +41,8 @@ header select{
 	margin: 0 auto;
 }
 
-main .ficha{
-	width: 700px;
+main .table{
+	width: 100%;
 	margin: 0 auto;
 	border: 2px solid tomato;
 	margin-bottom: 20px;
@@ -53,3 +53,11 @@ footer{
 	color: white;
 	padding: 10px;
 }
+input, select{
+  margin: 1%;
+  text-align: center;
+}
+tr{
+  text-align: center;
+}
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
 
 @Component({
   selector: 'tabla',
@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablaComponent implements OnInit {
 
-  constructor() { }
+  tabla: any []
+
+  constructor() {
+    this.tabla = []
+  }
 
   ngOnInit() {
   }
+  aumentarTabla(){
+
+    if(this.tabla.length<3){
+      this.tabla.push('fila')
+    }
+
+  }
+  nuevaTabla(){
+    this.tabla = [1]
+  }
 
 }
+
