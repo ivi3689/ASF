@@ -1,4 +1,4 @@
-import { Component, OnInit,  } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 
 @Component({
   selector: 'tabla',
@@ -7,24 +7,36 @@ import { Component, OnInit,  } from '@angular/core';
 })
 export class TablaComponent implements OnInit {
 
-  tabla: any []
+  // tabla: any[];
+  ahorros: number;
+  acumulado: number;
+  listaAcumulados = [];
+
 
   constructor() {
-    this.tabla = []
-  }
-
-  ngOnInit() {
-  }
-  aumentarTabla(){
-
-    if(this.tabla.length<3){
-      this.tabla.push('fila')
-    }
+    // this.tabla = [];
+    this.ahorros = 0;
+    this.acumulado = 0;
 
   }
-  nuevaTabla(){
-    this.tabla = [1]
-  }
+   ngOnInit() {
+   }
+
+   cargarTabla(pcantidad, psemanas)
+   {
+     this.ahorros = pcantidad;
+
+     for(let i=1; i<= psemanas; i++)
+     {
+       this.acumulado += i * this.ahorros;
+       this.listaAcumulados.push(this.acumulado);
+     }
+   }
+  //  borrarTabla(){
+  //   this.tabla = [1]
+  // }
+
 
 }
+
 
