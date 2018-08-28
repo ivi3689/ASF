@@ -12,7 +12,7 @@
     <input #cantidad class="cantidad" type="text" placeholder="Cantidad minima diaria">
     <input #semanas class="tiempo" type="text" placeholder="¿Cuanto tiempo necesitas?">
     <input type="button" value="Mostrar tabla" (click)="cargarTabla(cantidad.value, semanas.value)">
-    <input type="button" value="Borrar tabla" (click)="borrarTabla()">
+    <input type="button" value="Borrar tabla" (click)="borrarTabla($event.target.value)">
   </header>
 
   <main id="main">
@@ -48,3 +48,5 @@
     Tabla proporcionada por ASF
   </footer>
 </div>
+
+

@@ -48,7 +48,7 @@
       Este método consiste en la aplicacion de la siguiente formula
       <strong>EDAD - 20 = % de ahorro</strong> y cuyo método se suele utilizar desde los vainete a los sesenta años.
     </p>
-    <img class="imagen" src="../../assets/metodoEdad.PNG" alt="">
+    <img class="imagen" src="../../assets/metodoEdad.PNG">
     <p>
       Las ventajas de este método son:
       <br> - Es escalonado partiendo desde el 1%.
@@ -63,4 +63,49 @@
       <strong>"presupuesto es decirle a tu dinero a donde ir antes de que se haya ido"</strong>
     </P>
   </div>
-</section>
+</section><br>
+
+<div id="wrapper">
+  <header>
+    <h2>Método de la edad</h2>
+    <input #anios class="cantidad" type="text" placeholder="Introduce tu edad" max="60" min="20" >
+    <input #tiempo class="tiempo" type="number" placeholder="¿Cuanto tiempo necesitas?" max="40" min="1">
+    <input #misIngresos class="cantidad" type="text" placeholder="Ingresos">
+    <input type="button" value="Mostrar tabla" (click)="cargarTabla(anios.value, tiempo.value, misIngresos.value)">
+    <input type="button" value="Borrar tabla" (click)="borrarTabla($event.target.value)">
+  </header>
+
+  <main id="main">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Edad</th>
+          <th scope="col"></th>
+          <th scope="col">Porcentaje de ahorro</th>
+          <th scope="col">Ingresos</th>
+          <th scope="col">Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let d of listaAnios; let i = index">
+          <th scope="row">{{this.edad+i}}</th>
+           <td></td>
+           <td>{{this.porcentaje+i}}%</td>
+           <td>{{this.ingresos}}€</td>
+           <td>{{(this.porcentaje+i)*this.ingresos/100}}€</td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Resultado total: </th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><input type="text"></td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <footer>
+    Tabla proporcionada por ASF
+  </footer>
+</div><br>

@@ -16,6 +16,7 @@ import {RouterModule} from '@angular/router';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import { TablaComponent } from './tabla/tabla.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 
@@ -32,7 +33,8 @@ import { TablaComponent } from './tabla/tabla.component';
     HomeComponent,
     MetodosComponent,
     RetosComponent,
-    TablaComponent
+    TablaComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

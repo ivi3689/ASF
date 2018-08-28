@@ -6,7 +6,8 @@ import {RegistrateComponent} from './registrate/registrate.component';
 import {HomeComponent} from './home/home.component';
 import {MetodosComponent} from './metodos/metodos.component';
 import {RetosComponent} from './retos/retos.component';
-import {TablaComponent} from './tabla/tabla.component'
+import {TablaComponent} from './tabla/tabla.component';
+import {PerfilComponent} from './perfil/perfil.component';
 
 export const appRoutes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -16,6 +17,7 @@ export const appRoutes: Routes = [
 {path: 'metodos', component: MetodosComponent},
 {path: 'retos', component: RetosComponent},
 {path: 'tabla', component: TablaComponent},
+{path: 'perfil', component: PerfilComponent},
 //{path: 'home/:tiposmetodo', component: HomeComponent},
 {path: '**', redirectTo: 'home'}
 ]

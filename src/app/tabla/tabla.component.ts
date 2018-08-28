@@ -7,20 +7,19 @@ import { Component, OnInit  } from '@angular/core';
 })
 export class TablaComponent implements OnInit {
 
-  // tabla: any[];
+  tabla: any[];
   ahorros: number;
   acumulado: number;
   listaAcumulados = [];
 
 
   constructor() {
-    // this.tabla = [];
+    this.tabla = [];
     this.ahorros = 0;
     this.acumulado = 0;
 
   }
-   ngOnInit() {
-   }
+   ngOnInit() {}
 
    cargarTabla(pcantidad, psemanas)
    {
@@ -32,9 +31,10 @@ export class TablaComponent implements OnInit {
        this.listaAcumulados.push(this.acumulado);
      }
    }
-  //  borrarTabla(){
-  //   this.tabla = [1]
-  // }
+   borrarTabla($event){
+    this.listaAcumulados = []
+    this.acumulado = 0
+  }
 
 
 }
