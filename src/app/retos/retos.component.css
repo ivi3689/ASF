@@ -1,3 +1,6 @@
+.container_principal{
+  margin-top: 1%;
+}
 h2{
   font-size: 150%;
   font-weight: bold;
@@ -14,15 +17,7 @@ h2{
 #reto{
 	padding: auto;
 }
-img{
-  margin:auto 20%;
-}
-.imgpequeña{
-  margin:auto 30%;
-}
-.imgpequeña1{
-  margin:auto 36%;
-}
+
 td, th{
   text-align: center;
 }
@@ -30,3 +25,31 @@ input{
   margin:10px 10px;
   padding:10px;
 }
+footer{
+	background-color: black;
+  color: white;
+  width: 1115px;
+  margin: 0 auto;
+	padding: 10px;
+}
+/* paa destok */
+@media (min-width: 992px) {
+img{
+  margin: 1% 21%;
+  width: 550px !important;
+  height: auto !important;
+
+}
+.imgpequeña{
+  margin:auto 30%;
+}
+.imgpequeña1{
+  margin: auto 36%;
+}
+
+  }
+  /* @media (max-width: 800px) {
+    .imgCenter{
+      margin: auto 50%;
+    }
+  } */

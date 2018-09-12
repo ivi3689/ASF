@@ -1,5 +1,5 @@
-<section id="reto" class="container-fluid">
-  <div class="container">
+<section id="reto1" class="container-fluid">
+  <div class="container_principal">
     <h2 class="font-weight-bold text-center">TIPOS DE RETOS</h2>
     <hr class="lineatitulo mb-5" noshade="noshade">
     <h3>Reto de las 52 semanas</h3>
@@ -10,7 +10,7 @@
       semana 3 euros… y así hasta la semana 52 en la que ahorrarías 52 euros. Al final del reto, que dura un año, habrás
       acumulado 1.378 euros.Así evoluciona el ahorro a lo largo del reto de las 52 semanas.
       <br>
-      <img src="../../assets/reto 52.PNG" alt="">
+      <img class="img img-fluid " alt="Responsive image" src="../../assets/reto 52.PNG" alt="">
     </p>
     <p>
       Tal y como está estructurado, este desafío de ahorrar dinero exige un mayor esfuerzo al final. Dividido en meses de cuatro
@@ -18,8 +18,8 @@
       <br> Además, durante todo el año te habrás ido acostumbrando a tener menos dinero disponible de forma gradual, por lo que
       es fácil que ni siquiera notes el incremento.
     </p>
-    <img class="imgpequeña1" src="../../assets/reto52acumulado.PNG" alt="">
-    <p>
+    <img class="img img-fluid " alt="Responsive image" src="../../assets/acumuladosemanamax.PNG" alt="">
+    <p><br>
       El reto de ahorro de las 52 semanas es ideal para ahorrar el dinero de vacaciones y en general para cualquier gasto que sepamos
       que tiene una cadencia anual. También es una buena forma de acercarse al ahorro para quienes les cuesta ahorrar.
       Existen multitud de variaciones respecto al reto original como como ahorrar en múltiplos de 10 en lugar de 1 euro,
@@ -28,7 +28,7 @@
     </p>
   </div>
 </section>
-<section id="reto" class="container-fluid">
+<section id="reto2" class="container-fluid">
   <div class="container">
     <hr class="lineatitulo mb-5" noshade="noshade">
     <h3 class="font-weight-bold text-center">Reto del mes</h3>
@@ -36,7 +36,10 @@
       Si el reto de las 52 semanas propone un marco de un año, el reto de los 30 días de ahorro lo acota a un mes.
       Su funcionamiento es similar, pero aquí el límite temporal es clave
     </p>
-    <img src="../../assets/retomes.PNG" alt="">
+    <div>
+        <img class="img img-fluid" alt="Responsive image"  src="../../assets/retomes.PNG" alt="">
+    </div>
+
     <p>
       En este reto empezarás ahorrando un poco cada día y la cantidad irá incrementándose con el paso del tiempo. Si empiezas con
       1 euro el primer día ahorrarás 2 euros y el último 30 euros.
@@ -50,7 +53,7 @@
     </P>
   </div>
 </section>
-<section id="reto" class="container-fluid">
+<section id="reto3" class="container-fluid">
   <div class="container">
     <hr class="lineatitulo mb-5" noshade="noshade">
     <h3 class="font-weight-bold text-center">Reto de los 365 días</h3>
@@ -59,24 +62,24 @@
       Su organización es algo diferente y no propone un escalado de ahorro.
       El reto de los 365 días divide el ahorro entre semanas, pero propone ahorrar lo mismo cada semana.
     </p>
-    <img class="imgpequeña1" src="../../assets/retoanual.PNG">
+    <div><img class="img img-fluid imgCenter" alt="Responsive image" src="../../assets/retoanualmax.PNG"></div><br>
+
     <p>
       Repite el reto de los 365 días todo el año y al final obtendrás 1.456 euros. Este reto se puede aplicar para un mes o también el reto de las 52 semanas sino es factible hacerlo con el reto original.
     </p>
     <P>
       Como podemos ver en la imagen inferior este sistema se puede hacer siendo el primer dia el importe mas alto de la semana como el mas bajo. La tabla viene con un ejemplo dcuyas cantidades van de 1 a 7 euros.
     </P>
-    <img  class="imgpequeña" src="../../assets/retoanual_acumulado.PNG">
+    <img  class="img img-fluid" alt="Responsive image" src="../../assets/retoanual_acumulado.PNG">
   </div>
 </section>
-<section id="reto" class="container-fluid">
+<section id="reto4" class="container-fluid">
     <div class="container">
       <hr class="lineatitulo mb-5" noshade="noshade">
-      <h3 class="font-weight-bold text-center">Reto del centimo</h3>
+      <h3 class="font-weight-bold text-center">Reto del céntimo</h3>
       <p>
-          Este reto para ahorrar dinero te permitirá ahorrar 667,95 euros al final. De nuevo, propone un incremento gradual del ahorro, que irá desde 1 céntimo hasta 3,95 euros al día cerca del final del reto.
+          Este reto para ahorrar dinero te permitirá ahorrar 667,95 euros al final. De nuevo, propone un incremento gradual del ahorro, que irá desde 1 céntimo hasta 3,95 euros al día cerca del final del reto.<br>
       </p>
-      <img src="../../assets/" alt="">
       <p>
         El reto del céntimo se puede poner en práctica de tres formas diferentes: creciente, decreciente y de forma desordenada.
       </p>
@@ -85,39 +88,14 @@
           El reto del céntimo descendiente. Es igual que el anterior, pero a la inversa. Empezarías ahorrando 3,65 céntimos y reduciendo un céntimo cada día.
           El reto del céntimo desordenado. Si no tienes un céntimo ese día puedes optar por esta práctica, con la que cada día ahorrarás una cantidad diferente. Para poder llevarla a cabo es necesario o recomendable contar con una lista con todas las cantidades para poder tacharlas.
       </P>
-      <img src="../../assets/" alt="">
+      <img class="img img-fluid " alt="Responsive image" src="../../assets/metodo365.PNG" alt="">
+      <hr class="lineatitulo mb-5" noshade="noshade">
     </div>
   </section>
-  <section id="reto" class="container-fluid">
-      <div class="container">
-    <header>
-      <h2>Método 50/30/20</h2>
-      <input #misIngresos class="cantidad" type="text" placeholder="Ingresos">
-      <input type="button" value="Mostrar tabla" (click)="cargarTabla( misIngresos.value)">
-    </header>
 
-    <main id="main">
-      <table class="table">
-        <thead class="thead-light">
-          <tr>
-            <th scope="col">Ingresos</th>
-            <th scope="col">Cantidad destinada a gastos fijos</th>
-            <th scope="col">Cantidad destinada a gastos personales</th>
-            <th scope="col">Cantidad destinada para el ahorro</th>
-            <th scope="col">Resultado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="table-active">
-              <th scope="row">{{this.ingresos}}€</th>
-              <td>{{this.ingresos*this.constFija/100}}€</td>
-              <td>{{this.ingresos*this.constPersonal/100}}€</td>
-              <td>{{this.ingresos*this.constAhorro/100}}€</td>
-              <td>{{(this.ingresos*this.constFija/100)+(this.ingresos*this.constPersonal/100)+(this.ingresos*this.constAhorro/100)}}€</td>
-           </tr>
-        </tbody>
-      </table>
-    </main>
-  </div>
-  </section><br>
+  <footer>
+      Estos datos están proporcionados por ASF
+  </footer><br>
+
+
 

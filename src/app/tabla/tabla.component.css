@@ -16,20 +16,28 @@ p{
 	padding: 10px;
 }
 
-header{
+input{
  margin-bottom: 20px;
 }
 
-header select{
+ select{
 	margin-top: 20px;
 }
 
-#wrapper{
+.container{
 	width: 960px;
 	margin: 0 auto;
 }
 
-main .table{
+.cuadro{
+  font-size: 150%;
+  font-weight: bold;
+	text-align: center;
+  background-color:aquamarine;
+  color: darkblue;
+}
+
+ .table{
 	width: 100%;
 	margin: 0 auto;
 	border: 2px solid tomato;
@@ -44,6 +52,7 @@ footer{
 input{
   margin: 1%;
   text-align: center;
+  margin-bottom: 20px;
 
 }
 

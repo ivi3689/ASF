@@ -3,10 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 .form-group{
 	width: 80%;
   margin: 0 auto;
   padding:  0;
+
 }
 
 .form-group:after{
@@ -20,7 +22,6 @@
 h2{
 	font-weight: bold;
   text-align:center;
-  padding: 15px 0px;
 }
 
 .bigicon {
@@ -28,4 +29,41 @@ h2{
   color: #36A0FF;
   padding: 10px;
 }
+.contact-image{
+  text-align: center;
+}
+.contact-image img{
+  border-radius: 6rem;
+  width: 11%;
+  margin-top: -3%;
+  transform: rotate(29deg);
+}
 
+
+.form-group{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 70%;
+}
+.form-group .form-control{
+  border-radius:1rem;
+}
+
+.btn
+{
+  width: 70%;
+  border-radius: 1rem;
+  padding: 1.5%;
+  color: #fff;
+  background-color: #0062cc;
+  border: none;
+  cursor: pointer;
+}
+ .redes{
+  float: right;
+}
+
+i{
+  color: rgb(0, 123, 255);
+  margin-left: 10px !important;
+}

@@ -9,6 +9,7 @@ import {RetosComponent} from './retos/retos.component';
 import {TablaComponent} from './tabla/tabla.component';
 import {PerfilComponent} from './perfil/perfil.component';
 
+
 export const appRoutes: Routes = [
 {path: '', redirectTo: 'home', pathMatch: 'full'},
 {path: 'login', component:LoginComponent},
@@ -18,6 +19,7 @@ export const appRoutes: Routes = [
 {path: 'retos', component: RetosComponent},
 {path: 'tabla', component: TablaComponent},
 {path: 'perfil', component: PerfilComponent},
-//{path: 'home/:tiposmetodo', component: HomeComponent},
+{path: 'contacto', component: PieComponent},
+
 {path: '**', redirectTo: 'home'}
 ]

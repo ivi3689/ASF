@@ -2,3 +2,32 @@
   <router-outlet></router-outlet>
 
 
+      <go-top-button
+      [animate]="true"
+      [speed]="50"
+      [acceleration]="2"
+      [scrollDistance]="300"
+      [classNames]="'custom-class'"
+      [styles]="{
+
+        'height': '100px',
+        'width': '160px',
+        'margin': '0 auto',
+        'border-radius': '20px 20px 20px 20px',
+        'right': '5px',
+        'color': 'blue',
+        'border': '10px solid',
+        'line-height': '20px'
+     }">
+
+     <div class="to-top"><br>
+      <a class=" flechatexto">Back to top</a>
+     </div><br>
+    </go-top-button><br>
+     <!-- <i class='fa fa-arrow-up'>Back to top</i> -->
+
+      <!-- <div class="flecha"> -->
+      <!-- boton para subir con animacion -->
+    <!-- <a  class="to-top" [routerLink]="['/']" fragment="cabecera" >Back to top</a> -->
+  <!-- </div> -->
+

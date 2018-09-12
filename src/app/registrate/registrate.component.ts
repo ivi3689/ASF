@@ -30,24 +30,17 @@ export class RegistrateComponent implements OnInit {
         Validators.required,
         Validators.pattern(/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{3})/)
       ]),
-      dni: new FormControl('', [
-        Validators.required,
-        Validators.pattern(/^[0-9]{8}[TRWAGMYFPDXBNJZSQVHLCKET]{1}$/i)
-      ]),
+
       password: new FormControl('', [
         Validators.required,
-        Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}[^'\s]/)
+        Validators.pattern(/^(?=.*\d).{4,8}$/)
+        // Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,15}[^'\s]/)
     ]),
       username: new FormControl('', Validators.required)
     })
   }
-  //cambiar los datos necesarios
+
    crearPerfil(){
     console.log(this.formulario.value)}
-  // handleOnSubmit(values){
 
-  //   this.registroService.postBuscandoPremio(values).then((response)=>{
-  //     console.log(response.json())
-  //   })
-  //}
 }

@@ -1,3 +1,108 @@
-<p>
-  prueba works!
-</p>
+<div class="container bootstrap snippet">
+    <div class="row">
+  		<div class="col-sm-10"><h1>Datos del usuario</h1></div>
+    	<div class="col-sm-2"><a href="home" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/28fd20ccec6865e2d5f0e1f4446eb7bf?s=100"></a></div>
+    </div>
+    <div class="row">
+  		<div class="col-sm-3"><!--left col-->
+      <div class="text-center">
+        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Subir una foto...</h6><br>
+        <input type="file" class="text-center center-block file-upload">
+      </div><br>
+            <div class="panel-body"><a href="contacto">CONTACTO</a></div>
+          <div class="panel panel-default">
+            <div class="panel-heading">SOCIAL MEDIA</div>
+            <div class="panel-body">
+                <i class="fa fa-facebook fa-2x"></i><br> <i class="fa fa-instagram fa-2x"></i><br>
+                <i class="fa fa-twitter fa-2x"></i><br> <i class="fa fa-google-plus fa-2x"></i>
+            </div>
+          </div>
+        </div><!--/col-3-->
+    	<div class="col-sm-9">
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+                <hr>
+                  <form class="form" action="##" method="post" id="registrationForm">
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                              <label for="nombre"><h4>Nombre</h4></label>
+                              <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Introducir el nombre" title="enter your first name if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                            <label for="apellidos"><h4>Apellidos</h4></label>
+                              <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Introducir los apellidos" title="enter your last name if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                              <label for="edad"><h4>Edad</h4></label>
+                              <input type="text" class="form-control" name="edad" id="edad" placeholder="Introducir la edad" title="enter your edad number if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                             <label for="telefono"><h4>Telefono</h4></label>
+                              <input type="text" class="form-control" name="telefono" id="telefono" placeholder=" Introducir un nº de telefono" title="enter your telefono number if any.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                              <label for="email"><h4>Email</h4></label>
+                              <input type="email" class="form-control" name="email" id="email" placeholder="nombre@email.com" title="enter your email.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                              <label for="usuario"><h4>Usuario</h4></label>
+                              <input type="usuario" class="form-control" id="usuario" placeholder="Introducir un usuario" title="enter a location">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                              <label for="password"><h4>Contraseña</h4></label>
+                              <input type="password" class="form-control" name="password" id="password" placeholder=" Introducir una contraseña" title="enter your password.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <div class="col-xs-6">
+                            <label for="password2"><h4>Verificacion de contraseña</h4></label>
+                              <input type="password" class="form-control" name="password2" id="password2" placeholder="Verificacion de contraseña" title="enter your password2.">
+                          </div>
+                      </div>
+                      <div class="form-group">
+                           <div class="col-xs-12">
+                                <br>
+                              	<button class="btn btn-lg btn-success" type="submit"> Guardar datos</button>
+                               	<button class="btn btn-lg" type="reset"> Borrar perfil</button>
+                            </div>
+                      </div>
+              	</form>
+        </div><!--/col-9-->
+    </div><!--/row-->
+
+
+    <!-- // script de js
+
+    $(document).ready(function() {
+
+
+      var readURL = function(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+
+              reader.onload = function (e) {
+                  $('.avatar').attr('src', e.target.result);
+              }
+
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+
+
+      $(".file-upload").on('change', function(){
+          readURL(this);
+      });
+  }); -->

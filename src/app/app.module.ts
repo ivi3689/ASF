@@ -19,6 +19,8 @@ import { TablaComponent } from './tabla/tabla.component';
 import { PerfilComponent } from './perfil/perfil.component';
 
 
+import {GoTopButtonModule} from 'ng2-go-top-button';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 
 
@@ -34,13 +36,15 @@ import { PerfilComponent } from './perfil/perfil.component';
     MetodosComponent,
     RetosComponent,
     TablaComponent,
-    PerfilComponent
+    PerfilComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(appRoutes),ReactiveFormsModule
+    RouterModule.forRoot(appRoutes),ReactiveFormsModule,
+    GoTopButtonModule, BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
