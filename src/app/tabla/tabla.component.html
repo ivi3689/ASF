@@ -1,0 +1,96 @@
+
+<div class="container"><br>
+
+    <h2 class="cuadro">Seleccionar forma de ahorro</h2>
+    <select id="metodo">
+      <option value="">Selecciona un metodo o reto </option>
+      <option value="">Reto del céntimo </option>
+      <option value="">Reto de las 52 semanas </option>
+      <option value="">Reto de los 30 días </option>
+      <option value="">Reto de los 365 dias </option>
+    </select>
+    <input #cantidad class="cantidad" type="text" placeholder="Cantidad minima diaria">
+    <input #time class="tiempo" type="text" placeholder="¿Cuanto tiempo necesitas?">
+    <input type="button" value="Mostrar tabla" (click)="cargarTabla(cantidad.value, time.value)">
+    <input type="button" value="Borrar tabla" (click)="borrarTabla($event.target.value)">
+
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Periodo de tiempo</th>
+          <th scope="col"></th>
+          <th scope="col">Ahorro</th>
+          <th scope="col">Cantidad acumulada</th>
+
+        </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let d of listaAcumulados; let i = index">
+          <th scope="row">{{i+1}}</th>
+          <td></td>
+          <td>{{this.ahorros*(i+1) | number:'1.2-2'}}€</td>
+          <td>{{listaAcumulados[i] | number:'1.2-2'}}€</td>
+        </tr>
+        <tr class="table-active">
+          <th scope="row">Tiempo total: </th>
+          <td>{{this.tiempoAcumulado | number:'1.2-2'}}</td>
+          <td></td>
+          <td>{{this.acumulado | number:'1.2-2'}}€</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    Tabla proporcionada por ASF
+  </footer>
+</div>
+
+<!-- esta tabla calcula metiendo la cantidad total que el cliente quiere ahorrar en cuanto tiempo y dara la cantidad minima  -->
+
+<div class="container"><br>
+
+  <h2 class="cuadro">Cálculo de la cantidad inicial</h2>
+  <input #cuantia class="cantidad" type="text" placeholder="Cantidad final">
+  <input #tiempo class="tiempo" type="text" placeholder="¿Cuanto tiempo necesitas?">
+  <input type="button" value="Mostrar tabla" (click)="generarTabla(cuantia.value, tiempo.value)">
+  <input type="button" value="Borrar tabla" (click)="eliminarTabla($event.target.value)">
+
+
+      <div class="table-responsive">
+        <table class="table">
+          <thead class="thead-light">
+            <tr>
+              <th scope="col">Tiempo</th>
+              <th scope="col">Cantidad final</th>
+              <th scope="col">Ahorro</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let d of listaMinimoAhorro; let i = index">
+              <th scope="row">{{i+1}}</th>
+              <td>{{this.cantidadFinal - listaMinimoAhorroSum[i] | number:'1.2-2' }}€</td>
+              <td>{{ d | number:'1.2-2' }}€</td>
+              <td></td>
+
+            </tr>
+            <tr class="table-active">
+              <th scope="row">Tiempo total: </th>
+              <td></td>
+              <td>{{this.minimoAhorro | number:'1.2-2'}}€</td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <footer>
+        Tabla proporcionada por ASF
+      </footer>
+
+</div><br>
+

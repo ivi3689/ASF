@@ -1,0 +1,90 @@
+
+nav{
+  width: 100%;
+  min-height: 100px;
+  border:0px;
+  padding: 0px;
+  margin: 15px;
+  background: #66ccff;
+  box-shadow: 0px 4px 5px 2px #000000;
+}
+dropdown-item{
+  height: 40px;
+	overflow: hidden;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	top: -40px;
+}
+p{
+  text-align:center;
+  font-style:italic;
+  font-weight:bold;
+  font-size:1em;
+  font: color #555555;
+  font-family:'Helvetica';
+  align-content: center;
+}
+
+/* .custom-class {
+  position: fixed;
+  background-color: pink;
+  border-color: red;
+  height: 30px;
+  width: 30px;
+}
+.fa{
+  font-size:20px;
+} */
+/* flecha de subida con animacion */
+.to-top{
+	/* background:rgb(60, 168, 114); */
+  text-align:center;
+  /* padding:.5%; */
+  width: 80%;
+	font-size:150%;
+  margin-left:10%;
+  margin-right:10%;
+	font-family: Calibri, arial, sans-serif;
+}
+/* .to-top, .flechatexto{
+  margin:1%;
+  padding: 1%;
+} */
+.to-top{
+	color: rgb(0, 123, 255);
+  padding-top:.5em;
+	display:inline-block; /*or block*/
+	position:relative;
+	border-color: rgb(0, 123, 255);
+	text-decoration:none;
+  transition:all .3s ease-out;
+  margin: 0 auto;
+}
+.to-top:before{
+	content:'▲';
+	font-size:.9em;
+  position:absolute;
+  padding-bottom: 1em;
+	top:0;
+  left:50%;
+	margin-left:-.7em;
+	border:solid .13em  rgb(0, 123, 255);
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+.to-top:hover{
+	color:red;
+  border-color:red;
+}
+.to-top:hover:before{
+	transform: rotate(360deg);
+}
+/* fin flecha de subida */
+
+
+

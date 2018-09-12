@@ -1,0 +1,22 @@
+.panel-heading, .panel-body{
+  margin:0 auto;
+  padding: 1%;
+  font-weight: bold;
+}
+i{
+  margin:0 auto;
+  padding: 1rem;
+  color: rgb(0, 123, 255);
+}
+img{
+  margin: 10px 0 0 0;
+}
+.btn{
+  text-align: center;
+  margin: 0 0 0 1%;
+}
+h1{
+  margin:2.5% auto;
+  font-weight:bold;
+  text-decoration: underline;
+}
