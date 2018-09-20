@@ -1,5 +1,5 @@
 <section  class="metodo" id="metodo1" class="container-fluid">
-  <div class="container_principal">
+  <div class="container">
     <h2 class="font-weight-bold text-center">TIPOS DE MÉTODOS</h2>
     <hr class="lineatitulo mb-5" noshade="noshade">
     <h3>Método de porcentaje</h3>
@@ -10,6 +10,7 @@
       <img class="img-fluid" alt="Responsive image" src="../../assets/metodo_porcentaje.PNG" alt="">
     </p>
     <h5>El 50% del sueldo debería gastarse en:</h5>
+
 
     <p>
       El pago de la hipoteca o alquiler.
@@ -99,50 +100,51 @@
       </P>
     </div>
   </section><br>
+  <div class="container-fluid">
+  <div class="container">
+    <header>
+      <h2 class="cuadro">Método de la edad</h2>
+      <input #anios class="cantidad" type="text" placeholder="Introduce tu edad" max="60" min="20" >
+      <input #tiempo class="tiempo" type="number" placeholder="¿Cuanto tiempo necesitas?" max="40" min="1">
+      <input #misIngresos class="cantidad" type="text" placeholder="Ingresos anuales">
+      <input type="button" value="Mostrar tabla" (click)="cargarTabla(anios.value, tiempo.value, misIngresos.value)">
+      <input type="button" value="Borrar tabla" (click)="borrarTabla($event.target.value)">
+    </header>
 
-<div class="container">
-  <header>
-    <h2 class="cuadro">Método de la edad</h2>
-    <input #anios class="cantidad" type="text" placeholder="Introduce tu edad" max="60" min="20" >
-    <input #tiempo class="tiempo" type="number" placeholder="¿Cuanto tiempo necesitas?" max="40" min="1">
-    <input #misIngresos class="cantidad" type="text" placeholder="Ingresos anuales">
-    <input type="button" value="Mostrar tabla" (click)="cargarTabla(anios.value, tiempo.value, misIngresos.value)">
-    <input type="button" value="Borrar tabla" (click)="borrarTabla($event.target.value)">
-  </header>
+    <div class="table-responsive">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Edad</th>
+            <th scope="col">Porcentaje de ahorro</th>
+            <th scope="col">Ingresos</th>
+            <th scope="col">Resultado mensual</th>
+            <th scope="col">Resultado anual</th>
 
-  <div class="table-responsive">
-    <table class="table">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Edad</th>
-          <th scope="col">Porcentaje de ahorro</th>
-          <th scope="col">Ingresos</th>
-          <th scope="col">Resultado mensual</th>
-          <th scope="col">Resultado anual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let d of listaAnios; let i = index">
+            <th scope="row">{{this.edad+i}}</th>
+            <td>{{this.porcentaje+i | number:'1.2-2'}}%</td>
+            <td>{{this.ingresos | number:'1.2-2'}}€</td>
+            <td>{{((this.porcentaje+i)*this.ingresos/100) | number:'1.2-2'}}€</td>
+            <td>{{((this.porcentaje+i)*this.ingresos/100)*12 | number:'1.2-2'}}€</td>
+          </tr>
+          <tr class="table-active" >
+            <th scope="row"> </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-        </tr>
-      </thead>
-      <tbody>
-         <tr *ngFor="let d of listaAnios; let i = index">
-          <th scope="row">{{this.edad+i}}</th>
-           <td>{{this.porcentaje+i | number:'1.2-2'}}%</td>
-           <td>{{this.ingresos | number:'1.2-2'}}€</td>
-           <td>{{((this.porcentaje+i)*this.ingresos/100) | number:'1.2-2'}}€</td>
-           <td>{{((this.porcentaje+i)*this.ingresos/100)*12 | number:'1.2-2'}}€</td>
-        </tr>
-        <tr class="table-active" >
-          <th scope="row">Resultado total: </th>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td>€</td>
-        </tr>
-      </tbody>
-    </table>
+    <footer>
+      Tabla proporcionada por ASF
+    </footer>
   </div>
-
-  <footer>
-    Tabla proporcionada por ASF
-  </footer>
 </div><br>
 

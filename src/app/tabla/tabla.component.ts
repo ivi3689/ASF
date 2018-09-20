@@ -60,7 +60,7 @@ export class TablaComponent implements OnInit {
     for(let i = this.periodo; i>0; i--){
       let sum =  this.sumatorioArr(this.listaMinimoAhorro)
       let ahorroAnterior = (i===this.periodo) ? 0 : sum
-      let ahorro = (this.cantidadFinal - ahorroAnterior) / ((i+1)*i/2);
+      let ahorro = ((this.cantidadFinal - ahorroAnterior) / ((i+1)*i/2));
       this.listaMinimoAhorro.push(ahorro)
       this.listaMinimoAhorroSum.push(sum)
     }
