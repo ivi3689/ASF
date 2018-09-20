@@ -1,0 +1,76 @@
+.container_principal{
+  margin-top: 1%;
+}
+h3, h5{
+	font-weight: bold;
+	text-align:center;
+}
+h2{
+  font-size: 150%;
+  font-weight: bold;
+	text-align: center;
+	background-color: tomato;
+	color: white;
+	padding: 10px;
+}
+p{
+  text-align:center;
+}
+.metodo{
+	padding: 30px 0px;
+}
+img{
+  margin:2% !important;
+}
+
+
+
+para la tabla
+
+.container{
+	width: 960px;
+	margin: 0 auto;
+}
+.cuadro{
+  font-size: 150%;
+  font-weight: bold;
+	text-align: center;
+  background-color:aquamarine;
+  color: darkblue;
+}
+
+.table{
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid tomato;
+	margin-bottom: 20px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+input, select{
+  margin: 1%;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.tiempo{ width: 180px;}
+tr{
+  text-align: center;
+}
+
+button{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+	background-color: green;
+}
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}

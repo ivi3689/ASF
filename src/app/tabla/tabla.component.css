@@ -1,0 +1,74 @@
+*{margin: 0; padding: 0}
+
+body{font-family: Arial;}
+
+h2{
+	font-size: 150%;
+	text-align: center;
+	background-color: tomato;
+	color: white;
+	padding: 10px;
+}
+
+p{
+	line-height: 18px;
+	font-style: italic;
+	padding: 10px;
+}
+
+input{
+ margin-bottom: 20px;
+ text-align: center;
+}
+.tiempo{
+  width: 180px;
+}
+
+ select{
+	margin-top: 20px;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.cuadro{
+  font-size: 150%;
+  font-weight: bold;
+	text-align: center;
+  background-color:aquamarine;
+  color: darkblue;
+}
+
+ .table{
+	width: 100%;
+	margin: 0 auto;
+	border: 2px solid tomato;
+	margin-bottom: 20px;
+}
+
+footer{
+	background-color: black;
+	color: white;
+	padding: 10px;
+}
+input{
+  margin: 1%;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+/* .tiempo{ width: 17.5%;} */
+tr{
+  text-align: center;
+}
+
+button{
+	width: 50px;
+	height:50px;
+	border-radius: 50%;
+	background-color: green;
+}
+
