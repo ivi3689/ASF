@@ -11,7 +11,7 @@ export class TablaComponent implements OnInit {
   ahorros: number;
   acumulado: number;
   listaAcumulados = [];
-  // tiempoAcumulado: number;
+  tiempoAcumulado: number;
 
  // estos son para la segunda tabla
   cantidadFinal: number;
@@ -25,7 +25,7 @@ export class TablaComponent implements OnInit {
     this.tabla = [];
     this.ahorros = 0;
     this.acumulado = 0;
-    // this.tiempoAcumulado = 0;
+    this.tiempoAcumulado = 0;
     // estos son para la segunda tabla
     this.cantidadFinal = 0;
     this.tiempo = 0;
